@@ -1,0 +1,49 @@
+IMPORTANT!!
+Be sure to have node.js installed
+
+INSTALL TAILWIND IN YOUR PROJECT'S FOLDER
+npm init -y  <<<----This line creates package.json
+npm install -D tailwindcss <<<----This line installs tailwind in the project
+npx tailwindcss init <<<----This line creates tailwind.config.js
+
+
+CONFIGURA TAILWIND.CONFIG.JS
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"], <<<----This line must be there, if not update (you can use 'content: ["./**/*.{html,js}"],'allows to deploy index or any html file located in root folder)
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+
+CREATE CSS FOLDER WITH THE FILE CONFIG.CSS. ADD THIS LINES TO CONFIG.CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+THEN ADD THE FOLLOWING TO PACKAGE.JSON:
+{
+  "name": "tailwind-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scanTailwind": "npx tailwindcss -i ./css/config.css -o ./css/estilos.css --watch"<<--THIS IS THE LINE YOU HAVE TO ADD (CHECK THE PATH)
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+  }
+
+THEN RUN THE FOLLOWING COMMAND IN THE TERMINAL:
+npm run scanTailwind <<--THE NAME CAN BE DIFERENT
+
+
+NOW YOU CAN START WORKING IN YOUR PROJECT
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append Landing Page</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="wrapper">
+        <h1 class="w-1/4 max-w-[140px] text-[24px] font-bold text-white">
+          Append <span class="text-red-600 -m-1">.</span>
+        </h1>
+
+        <input type="checkbox" id="menu" class="peer hidden" />
+        <label
+          for="menu"
+          class="bg-open-menu w-6 h-5 bg-cover bg-center cursor-pointer peer-checked:bg-close-menu transition-all z-50 md:hidden sm:hidden"
+        ></label>
+
+        <div
+          class="fixed inset-0 translate-x-full peer-checked:translate-x-0 transition-transform z-40 md:static md:translate-x-0"
+        >
+          <ul
+            class="absolute inset-x-0 top-24 p-12 bg-none w-[90%] mx-auto h-max text-center grid gap-6 text-white md:w-max md:p-0 md:grid-flow-col md:static"
+          >
+            <li class="opacity-65 hover:text-white hover:opacity-100">
+              <a href="#" class=""> Home </a>
+            </li>
+            <li class="opacity-65 hover:text-white hover:opacity-100">
+              <a href="#" class=""> About</a>
+            </li>
+            <li class="opacity-65 hover:text-white hover:opacity-100">
+              <a href="#" class=""> Services</a>
+            </li>
+            <li class="opacity-65 hover:text-white hover:opacity-100">
+              <a href="#" class=""> Portafolio</a>
+            </li>
+            <li class="opacity-65 hover:text-white hover:opacity-100">
+              <a href="#" class=""> Team</a>
+            </li>
+            <li class="opacity-65 hover:text-white hover:opacity-100">
+              <a href="#" class=""> Blog</a>
+            </li>
+            <li class="opacity-65 hover:text-white hover:opacity-100">
+              <a href="#" class=""> Dropdown</a>
+            </li>
+            <li class="opacity-65 hover:text-white hover:opacity-100">
+              <a href="#" class=""> Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="overflow-hidden">
+          <div class="absolute inset-0 bg-black opacity-45 -z-20"></div>
+          <img
+            class="absolute inset-0 h-full w-full object-cover -z-30"
+            src="./src/hero-bg.jpg"
+            alt=""
+          />
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

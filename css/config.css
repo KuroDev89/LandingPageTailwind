@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .wrapper   {
+        @apply w-[90%] my-5 mx-3 overflow-hidden max-w-screen-xl
+    }
+}
